@@ -1,0 +1,71 @@
+@import "../../variables.scss";
+
+.chatMessage {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 32px;
+  &.fromYou {
+    flex-direction: row-reverse;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .messageContent {
+    flex-grow: 1;
+    .messageContentTitle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .fromTo {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #6b7280;
+        span {
+          color: $activeColor;
+        }
+      }
+      .time {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #6b7280;
+      }
+    }
+    .messageContentText {
+      margin-top: 4px;
+      background-color: $secondaryColor;
+      border: $primaryBorder;
+      padding: 8px 12px;
+      border-radius: 8px;
+      color: #d1d5db;
+      font-weight: 400;
+      font-size: 14px;
+      .document {
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 12px;
+          border-radius: 4px;
+        }
+        .documentDetail {
+          line-height: 120%;
+          font-weight: 400;
+          .name {
+            display: block;
+            font-size: 14px;
+            color: #d1d5db;
+          }
+          .size {
+            color: #6b7280;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

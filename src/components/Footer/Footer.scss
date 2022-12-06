@@ -1,0 +1,44 @@
+@import "../../variables";
+
+footer {
+  height: 112px;
+  padding: 0 16px;
+  background-color: $primaryColor;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .voice {
+    padding: 0 18px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    background-color: $secondaryColor;
+    border: $primaryBorder;
+    border-radius: 8px;
+    img {
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
+  }
+  .options {
+    display: flex;
+    align-items: center;
+    .line {
+      width: 1px;
+      height: 32px;
+      background-color: rgba(55, 65, 81, 0.5);
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+  .leaveBtn {
+    background: #ef4444;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 0 16px;
+    border: none;
+    outline: none;
+    height: 56px;
+  }
+}

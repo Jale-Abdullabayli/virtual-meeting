@@ -1,0 +1,12 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  .leftArrow {
+    margin-right: 27px;
+  }
+  .RightArrow {
+    margin-left: 27px;
+  }
+}

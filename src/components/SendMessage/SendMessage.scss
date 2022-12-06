@@ -1,0 +1,62 @@
+@import "../../variables.scss";
+
+.sendMessage {
+  border: $primaryBorder;
+  padding: 8px;
+  background: #17202e;
+  .sendMessageTitle {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .to {
+      border-radius: 5px;
+      cursor: pointer;
+      background: #17202e;
+      border: 1px solid rgba(55, 65, 81, 0.5);
+      padding: 4px 8px;
+      span {
+        color: #d1d5db;
+        margin-right: 10px;
+      }
+    }
+    .icons {
+      img {
+        cursor: pointer;
+        &:first-child {
+          margin-right: 18px;
+        }
+      }
+    }
+  }
+  .sendMessageContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input {
+      flex-grow: 1;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: #6b7280;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      &::placeholder {
+       
+        color: #6b7280;
+      }
+    }
+    button {
+        background-color:$activeColor;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline: none;
+    }
+  }
+}

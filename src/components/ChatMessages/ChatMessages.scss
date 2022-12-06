@@ -1,0 +1,15 @@
+@import '../../variables';
+
+
+.chatMessages{
+    height: 273.91px;
+    overflow-y:scroll ;
+    padding: 16px;
+    &::-webkit-scrollbar{
+background-color:    #17202E;;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color:$secondaryColor;
+    }
+   
+}

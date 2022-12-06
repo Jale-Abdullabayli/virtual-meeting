@@ -1,0 +1,50 @@
+.partipicantCol {
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+  margin-bottom: 8px;
+  .partipicant {
+    position: relative;
+    border: 1px solid rgba(31, 41, 55, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    &.active {
+      border: 2px solid yellow;
+    }
+    .profilImg {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      z-index: 1;
+    }
+    .colFooter {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .name {
+        padding: 4px 8px;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(20px);
+        border-radius: 0px 6px 0px 0px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        img {
+          margin-right: 3px;
+        }
+      }
+      .microfon {
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(20px);
+        border-radius: 6px 0px 0px 0px;
+        padding: 4px 8px;
+      }
+    }
+  }
+}

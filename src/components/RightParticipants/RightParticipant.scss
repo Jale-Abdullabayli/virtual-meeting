@@ -1,0 +1,51 @@
+.rightParticipant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  .leftSide {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-right: 8px;
+    }
+    .about {
+      .name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 120%;
+        color: #d1d5db;
+      }
+      .profession {
+        display: block;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        color: #6b7280;
+      }
+    }
+  }
+  .rightSide {
+    display: flex;
+    align-items: center;
+    .host {
+      background: rgba(45, 140, 255, 0.1);
+      border: 1px solid rgba(45, 140, 255, 0.1);
+      border-radius: 100px;
+      padding: 4px 8px;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 13px;
+      color: #2d8cff;
+      margin-right: 10px;
+    }
+    .microfon{
+      margin-right: 10px;
+    }
+  }
+}

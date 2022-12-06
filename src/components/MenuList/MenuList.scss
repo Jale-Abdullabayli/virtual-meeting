@@ -1,0 +1,20 @@
+li {
+  margin: 0 24px;
+  &:not(.active) {
+    img {
+      opacity: 0.5;
+    }
+  }
+  &.active {
+    position: relative;
+    &::before {
+      position: absolute;
+      left: 0;
+      bottom: -40px;
+      width: 100%;
+      border: 2px solid #2d8cff;
+      box-shadow: 0px -2px 4px rgba(45, 140, 255, 0.8);
+      content: "";
+    }
+  }
+}
